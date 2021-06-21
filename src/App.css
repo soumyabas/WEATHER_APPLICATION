@@ -1,0 +1,117 @@
+body {
+  font-family: serif;
+  margin: 10px;
+  background-size: 100px;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+ul :first-letter {
+  text-transform: capitalize;
+}
+
+h2 {
+  text-align: left;
+  font-weight: medium;
+}
+h5 {
+  font-weight: medium;
+  font-size: 18px;
+}
+
+footer {
+  display: block;
+  margin-top: 10px;
+}
+.container {
+  width: 1000px;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23f7f9fa' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.content-border {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #e7e7e7;
+  padding: 15px;
+  height: 100%;
+}
+
+.img-fluid {
+  border-radius: 10px;
+}
+
+.weather {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #e7e7e7;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  font-size: 50px;
+  color: #e7e7e7;
+  border-radius: 10px;
+  padding: 0px 0px 0px 10px;
+}
+
+.content-border-ul {
+  margin-top: 20px;
+  padding: 30px 10px 20px 10px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #e7e7e7;
+  width: 100%;
+  height: 100%;
+}
+.mainCard {
+  text-transform: capitalize;
+}
+.form-control {
+  border-radius: 7px;
+  margin-right: 10px;
+}
+.btn-primary {
+  border: none;
+  border-radius: 3px;
+  background: rgb(255, 187, 0);
+  margin-right: 10px;
+}
+.btn-warning {
+  background: #e7e7e7;
+  border: none;
+}
+
+.celsius-temp {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+.celsius-temp:hover {
+  cursor: default;
+}
+
+.farenheit-temp {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(1, 146, 190);
+  font-size: 20px;
+}
+.attribute {
+  text-transform: capitalize;
+  font-weight: medium;
+}
+
+.link {
+  font-style: italic;
+  font-weight: medium;
+}
+
+.forecastSixDays {
+  padding: 50px 0px 0px 20px;
+}
