@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import axios from "axios";
 
@@ -71,14 +71,14 @@ function App() {
     event.preventDefault();
 
     // todo get celcius
-    let farenheitNow = document.querySelector("#degrees");
+    // let farenheitNow = document.querySelector("#degrees");
     // let farenheitTempNow = (celsiusTemperature * 9) / 5 + 32;
     // farenheitNow.innerHTML = Math.round(farenheitTempNow);
   }
 
   function displaycelsius(event) {
     event.preventDefault();
-    let tempNow = document.querySelector("#degrees");
+    //let tempNow = document.querySelector("#degrees");
     // tempNow.innerHTML = Math.round(celsiusTemperature);
   }
 
@@ -117,7 +117,7 @@ function App() {
     axios.get(apiUrl).then(showForecast);
 
   }
-  function Search() {
+  /*function Search() {
     let celsiusTemperature = null;
 
     let form = document.querySelector("#city-name");
@@ -128,7 +128,7 @@ function App() {
 
     let celsiusLink = document.querySelector("#celsius");
     celsiusLink.addEventListener("click", displaycelsius);
-  }
+  }*/
 
   function showTempNow(response) {
     let cityHereNow = document.querySelector("#cityName");
@@ -163,73 +163,73 @@ function App() {
     axios.get(`${geoApiUrl}`).then(showTempNow);
   }
 
-  function getCurrentPosition() {
-    navigator.geolocation.getCurrentPosition(showLocation);
-  }
-  /*
-  
-    let button = document.querySelector("#gps-Location");
-    button.addEventListener("click", getCurrentPosition);
-  
-    let forecastWeatherDays = document.querySelector("#forecastSixDays");
-  
-    let weekly = [{
-      time: '12:00',
-      img: 'https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png',
-      min: 5,
-      max: 7
-    },
-    {
-      time: '15:00',
-      img: 'https://ssl.gstatic.com/onebox/weather/64/snow_s_rain.png',
-      min: 6,
-      max: 7
-    },
-    {
-      time: '12:00',
-      img: 'https://ssl.gstatic.com/onebox/weather/64/rain_heavy.png',
-      min: 7,
-      max: 7
-    },
-    {
-      time: '12:00',
-      img: 'https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png',
-      min: 8,
-      max: 10
-    },
-    {
-      time: '12:00',
-      img: 'https://ssl.gstatic.com/onebox/weather/64/sunny.png',
-      min: 10,
-      max: 11
-    },
-    {
-      time: '12:00',
-      img: 'https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png',
-      min: 9,
-      max: 10
-    }]
-  
-    let html = '';
-    for (let index = 0; index < weekly.length; index++) {
-      const day = weekly[index];
-      html += `<div className= "col-2">
-        <h5>
-            ${day.time}
-        </h5>
-           </br>
-        <img
-        src="  ${day.img}" alt = ""
-      />
-        <div className= "weather-forecast">
+  /* function getCurrentPosition() {
+     navigator.geolocation.getCurrentPosition(showLocation);
+   }
+   /*
+   
+     let button = document.querySelector("#gps-Location");
+     button.addEventListener("click", getCurrentPosition);
+   
+     let forecastWeatherDays = document.querySelector("#forecastSixDays");
+   
+     let weekly = [{
+       time: '12:00',
+       img: 'https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png',
+       min: 5,
+       max: 7
+     },
+     {
+       time: '15:00',
+       img: 'https://ssl.gstatic.com/onebox/weather/64/snow_s_rain.png',
+       min: 6,
+       max: 7
+     },
+     {
+       time: '12:00',
+       img: 'https://ssl.gstatic.com/onebox/weather/64/rain_heavy.png',
+       min: 7,
+       max: 7
+     },
+     {
+       time: '12:00',
+       img: 'https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png',
+       min: 8,
+       max: 10
+     },
+     {
+       time: '12:00',
+       img: 'https://ssl.gstatic.com/onebox/weather/64/sunny.png',
+       min: 10,
+       max: 11
+     },
+     {
+       time: '12:00',
+       img: 'https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png',
+       min: 9,
+       max: 10
+     }]
+   
+     let html = '';
+     for (let index = 0; index < weekly.length; index++) {
+       const day = weekly[index];
+       html += `<div className= "col-2">
+         <h5>
+             ${day.time}
+         </h5>
             </br>
-        <strong>   ${day.min}°</strong>    ${day.max}°
-        </div>
-    </div>`
-    }
-  
-    forecastWeatherDays.innerHTML = html;
-  */
+         <img
+         src="  ${day.img}" alt = ""
+       />
+         <div className= "weather-forecast">
+             </br>
+         <strong>   ${day.min}°</strong>    ${day.max}°
+         </div>
+     </div>`
+     }
+   
+     forecastWeatherDays.innerHTML = html;
+   */
 
 
 
