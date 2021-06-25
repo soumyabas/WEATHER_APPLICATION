@@ -27,6 +27,7 @@ footer {
   display: block;
   margin-top: 10px;
 }
+
 .container {
   width: 1000px;
   background-color: #ffffff;
@@ -114,4 +115,9 @@ footer {
 
 .forecastSixDays {
   padding: 50px 0px 0px 20px;
+}
+
+button {
+  border: 0px;
+  background-color: transparent;
 }
